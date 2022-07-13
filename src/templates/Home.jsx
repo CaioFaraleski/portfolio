@@ -1,6 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
 
 export function Home() {
+
+  useEffect(() => {
+    document.addEventListener('scroll', (e) => {console.log(e, window.scrollY)});
+  }, []);
+
   return (
     <div className="h-screen w-screen bg-black flex justify-end relative">
       <figure className="p-0 m-0 h-full">
@@ -8,19 +14,19 @@ export function Home() {
       </figure>
       <div className="h-60 flex flex-col justify-evenly items-center absolute top-[calc(50%-6rem)] text-white mr-4">
         <a
-          className="h-10 w-10 mx-3 bg-white rounded-full flex justify-center items-center group hover:h-16 hover:w-16 hover:m-0 shadow"
+          className="h-10 w-10 mx-3 bg-white rounded-full flex justify-center items-center group transition-transform hover:scale-150 hover:m-0"
           href="https://github.com/CaioFaraleski"
         >
           <img className="h-3/5" src="./src/assets/images/github.png" alt="" />
         </a>
         <a
-          className="h-10 w-10 mx-3 bg-white rounded-full flex justify-center items-center group hover:h-16 hover:w-16 hover:m-0"
+          className="h-10 w-10 mx-3 bg-white rounded-full flex justify-center items-center group transition-transform hover:scale-150 hover:m-0"
           href="https://www.linkedin.com/in/caio-faraleski/"
         >
           <img className="h-3/5" src="./src/assets/images/linkedin.png" alt="" />
         </a>
         <a
-          className="h-10 w-10 mx-3 bg-white rounded-full flex justify-center items-center group hover:h-16 hover:w-16 hover:m-0"
+          className="h-10 w-10 mx-3 bg-white rounded-full flex justify-center items-center group transition-transform hover:scale-150 hover:m-0"
           href="https://www.instagram.com/caiotsfd/"
         >
           <img className="h-3/5" src="./src/assets/images/instagram.png" alt="" />

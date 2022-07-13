@@ -4,7 +4,7 @@ import { Home } from './templates/Home'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App fixed">
       <Home />
     </div>
   )
