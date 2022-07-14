@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply h-[calc(100vh+500px)] overflow-x-hidden;
+}
+
+.home {
+  background-image: url('./src/assets/images/test2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
 ::-webkit-scrollbar {
   width: 1px;
   background: black;

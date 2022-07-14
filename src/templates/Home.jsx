@@ -1,18 +1,15 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
+import { Content } from "../components/Content";
 
 export function Home() {
 
-  useEffect(() => {
-    document.addEventListener('scroll', (e) => {console.log(e, window.scrollY)});
-  }, []);
-
   return (
-    <div className="h-screen w-screen bg-black flex justify-end relative">
-      <figure className="p-0 m-0 h-full">
-        <img className="h-full" src="./src/assets/images/test3.png" alt="" />
-      </figure>
-      <div className="h-60 flex flex-col justify-evenly items-center absolute top-[calc(50%-6rem)] text-white mr-4">
+    <div className="home h-screen w-screen bg-black flex justify-between items-center relative">
+      <Content />
+      {/* <figure className="p-0 m-0 w-[60%] self-end">
+        <img className="w-full" src="./src/assets/images/test4.png" alt="" />
+      </figure> */}
+      <div className="h-60 flex flex-col justify-evenly items-center text-white mr-4">
         <a
           className="h-10 w-10 mx-3 bg-white rounded-full flex justify-center items-center group transition-transform hover:scale-150 hover:m-0"
           href="https://github.com/CaioFaraleski"
