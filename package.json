@@ -9,8 +9,12 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "framer-motion": "^6.5.1",
     "react": "^18.0.0",
+    "react-animated-progress-bar": "^1.1.1",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
@@ -20,6 +24,7 @@
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "react-router-dom": "^6.3.0",
+    "react-spring": "^9.0.0-rc.3",
     "react-timer-hook": "^3.0.5",
     "tailwindcss": "^3.1.6",
     "vite": "^2.9.9"
