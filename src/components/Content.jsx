@@ -64,11 +64,11 @@ export function Content() {
               >
               {page === 0 ? (
                 <div className="h-full flex flex-col ml-10 mt-10">
-                  <h2 className="text-5xl font-extralight">
+                  <h2 className="text-5xl font-extralight pl-1">
                     Meu nome é
                   </h2>
                   <h1 className="text-lightRed text-9xl font-semibold mt-4">Caio Faraleski</h1>
-                  <h2 className="text-6xl mt-10">Desenvolvedor Front-end</h2>
+                  <h2 className="text-6xl mt-10 pl-1">Desenvolvedor Front-end</h2>
                   <a href="./src/assets/Caio_Faraleski.pdf" class="btn from-center" download>Currículo</a>
                 </div>
               ) : null}
