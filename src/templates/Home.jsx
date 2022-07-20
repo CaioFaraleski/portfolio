@@ -10,19 +10,19 @@ export function Home() {
           className="h-10 w-10 mx-3 bg-lightGray rounded-full flex justify-center items-center group transition-transform hover:scale-150 hover:m-0"
           href="https://github.com/CaioFaraleski"
         >
-          <img className="h-3/5" src="./src/assets/images/github.png" alt="" />
+          <img className="h-3/5" src="https://caiofaraleski.github.io/portfolio/src/assets/images/github.png" alt="" />
         </a>
         <a
           className="h-10 w-10 mx-3 bg-lightGray rounded-full flex justify-center items-center group transition-transform hover:scale-150 hover:m-0"
           href="https://www.linkedin.com/in/caio-faraleski/"
         >
-          <img className="h-3/5" src="./src/assets/images/linkedin.png" alt="" />
+          <img className="h-3/5" src="https://caiofaraleski.github.io/portfolio/src/assets/images/linkedin.png" alt="" />
         </a>
         <a
           className="h-10 w-10 mx-3 bg-lightGray rounded-full flex justify-center items-center group transition-transform hover:scale-150 hover:m-0"
           href="https://www.instagram.com/caiotsfd/"
         >
-          <img className="h-3/5" src="./src/assets/images/instagram.png" alt="" />
+          <img className="h-3/5" src="https://caiofaraleski.github.io/portfolio/src/assets/images/instagram.png" alt="" />
         </a>
       </div>
     </div>

@@ -12,6 +12,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "firebase": "^9.9.0",
     "framer-motion": "^6.5.1",
     "react": "^18.0.0",
     "react-animated-progress-bar": "^1.1.1",
