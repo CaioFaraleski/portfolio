@@ -5,7 +5,7 @@ export function ProgressBars({ text, percent }) {
   return (
     <div className="w-[25%]">
       <h1 className="text-lightGray text-3xl font-bold mb-3">{text}</h1>
-      <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+      <div class="w-full bg-gray-200 rounded-full border border-lightRed">
         <AnimatePresence>
           <motion.div
             className="transition bg-lightRed py-5 rounded-full"
