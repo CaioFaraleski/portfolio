@@ -12,7 +12,6 @@ export function Content() {
     let lastScroll = 0;
     document.addEventListener('mousewheel', (e) => {
       if(e.target.classList[0] !== "no") {
-        console.log(e.target)
         if (e.deltaY > 0) {
           setToLeft(true)
           if(lastScroll <= 2) {
@@ -34,14 +33,27 @@ export function Content() {
     })
   }, []);
 
+  const handleChangePage = (num) => {
+    if(page < num) {
+      setToLeft(true)
+      window.scrollY = num
+      setPage(window.scrollY)
+    }
+    else {
+      setToLeft(false)
+      window.scrollY = num
+      setPage(window.scrollY)
+    }
+  }
+
   return (
     <div className="h-full w-[94%] text-white flex flex-col flex-wrap items-center ml-[4%]">
       <div className="flex justify-center items-center h-[10%]">
         <div className="flex justify-center items-center">
-          <span className={`rounded-full ${page === 0 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
-          <span className={`rounded-full ${page === 1 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
-          <span className={`rounded-full ${page === 2 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
-          <span className={`rounded-full ${page === 3 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
+          <span onClick={() => handleChangePage(0)} className={`rounded-full cursor-pointer ${page === 0 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
+          <span onClick={() => handleChangePage(1)} className={`rounded-full cursor-pointer ${page === 1 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
+          <span onClick={() => handleChangePage(2)} className={`rounded-full cursor-pointer ${page === 2 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
+          <span onClick={() => handleChangePage(3)} className={`rounded-full cursor-pointer ${page === 3 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
         </div>
       </div>
       <section className="h-[90%] w-full flex justify-start items-center">
