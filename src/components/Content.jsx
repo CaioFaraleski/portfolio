@@ -106,14 +106,12 @@ export function Content() {
               ) : null}
               {page === 2 ? (
                 <div id="cards" className="no flex justify-evenly items-center flex-wrap h-[85%] w-[70%] overflow-scroll overflow-x-hidden">
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
-                  <Card />
+                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/setvet.PNG" title="Setvet" link="" />
+                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/sudoku.PNG" title="Sudoku" link="" />
+                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/bombinhas.PNG" title="Bombinhas" link="" />
+                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/pokedex.PNG" title="Pokedex" link="" />
+                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/ignitelabe.PNG" title="IgniteLab" link="" />
+                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/snakegame.PNG" title="Snakegame" link="" />
                 </div>
               ) : null}
               {page === 3 ? (
