@@ -81,10 +81,10 @@ export function Content() {
               {page === 0 ? (
                 <div className="h-full flex flex-col ml-10 mt-10">
                   <h2 className="text-5xl font-extralight pl-1">
-                    Meu nome é
+                    Hi, i'm
                   </h2>
                   <h1 className="text-lightRed text-9xl font-semibold mt-4">Caio Faraleski</h1>
-                  <h2 className="text-6xl mt-10 pl-1">Desenvolvedor Front-end</h2>
+                  <h2 className="text-6xl mt-10 pl-1">Front-end Developer</h2>
                   <a
                     href="https://caiofaraleski.github.io/portfolio/src/assets/Caio_Faraleski.pdf"
                     class="w-fit mt-20 relative border py-[1.4rem] px-[4.2rem] text-3xl text-lightRed tt cursor-pointer before:content-[''] before:absolute before:-z-10 before:top-0 before:left-1/2 before:h-full before:w-0 before:border before:border-x-0 after:content-[''] after:absolute after:-z-10 after:bottom-0 after:left-0 after:h-0 after:w-full after:bg-lightRed hover:text-lightGray hover:delay-500 hover:before:delay-[0s] hover:before:left-0 hover:before:w-full hover:after:bg-lightRed hover:after:delay-[.35s] hover:after:top-0 hover:after:h-full"
@@ -96,6 +96,7 @@ export function Content() {
               ) : null}
               {page === 1 ? (
                 <div className="flex justify-evenly items-center flex-wrap gap-x-36 gap-y-9 w-[70%]">
+                  <h1 className="w-full text-6xl text-lightRed font-bold my-5 ml-10">Some of my main skills:</h1>
                   <ProgressBars text="JavaScript" percent="88" />
                   <ProgressBars text="HTML/CSS" percent="92" />
                   <ProgressBars text="ReactJs" percent="60" />
@@ -105,14 +106,17 @@ export function Content() {
                 </div>
               ) : null}
               {page === 2 ? (
-                <div id="cards" className="no flex justify-evenly items-center flex-wrap h-[85%] w-[70%] overflow-scroll overflow-x-hidden">
-                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/setvet.PNG" title="Setvet" link="" />
-                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/sudoku.PNG" title="Sudoku" link="" />
-                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/bombinhas.PNG" title="Bombinhas" link="" />
-                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/pokedex.PNG" title="Pokedex" link="" />
-                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/ignitelabe.PNG" title="IgniteLab" link="" />
-                  <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/snakegame.PNG" title="Snakegame" link="" />
-                </div>
+                  <>
+                  <h1 className="no w-full text-6xl text-lightRed font-bold my-5 ml-10">My works...</h1>
+                    <div id="cards" className="no flex justify-evenly items-center flex-wrap h-[85%] w-[70%] overflow-scroll overflow-x-hidden">
+                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/setvet.PNG" title="Setvet" link="https://setvet-96c51.web.app/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/sudoku.PNG" title="Sudoku" link="https://caiofaraleski.github.io/Sudoku/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/bombinhas.PNG" title="Hotel Bombinhas" link="https://caiofaraleski.github.io/Hotel-Bombinhas/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/pokedex.PNG" title="Pokedex" link="https://pokedex-caio.herokuapp.com/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/ignitelab.PNG" title="Classes Platform" link="https://caiofaraleski.github.io/Classes-Platform/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/snakegame.PNG" title="Snake Game" link="https://caiofaraleski.github.io/SnakeGame/" />
+                    </div>
+                  </>
               ) : null}
               {page === 3 ? (
                 <div>
