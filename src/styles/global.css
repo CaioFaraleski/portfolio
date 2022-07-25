@@ -59,3 +59,10 @@ body {
         font-size: 10px;
     }
 }
+
+@media (max-width: 1366px) {
+    .home {
+      background-image: url('https://caiofaraleski.github.io/portfolio/src/assets/images/bg-mobile.png');
+
+    }
+}
