@@ -11,6 +11,8 @@ export function Content() {
 
   useEffect(() => {
     let lastScroll = 0;
+    let touch = 0;
+
     document.addEventListener('mousewheel', (e) => {
       if(e.target.classList[0] !== "no") {
         if (e.deltaY > 0) {
@@ -28,10 +30,28 @@ export function Content() {
           }
         }
       }
-    });
-    document.addEventListener("mousewheel", () => {
       setPage(window.scrollY)
-    })
+    });
+    document.addEventListener('touchstart', (e) => {
+      touch = e.changedTouches[0].clientX;
+    });
+    document.addEventListener('touchend', (e) => {
+      if(e.changedTouches[0].clientX > touch) {
+        setToLeft(false)
+          if(lastScroll > 0) {
+            lastScroll--
+            window.scrollY = lastScroll
+          }
+      }
+      else if(e.changedTouches[0].clientX < touch) {
+        setToLeft(true)
+          if(lastScroll <= 2) {
+            lastScroll++
+            window.scrollY = lastScroll
+          }
+      }
+      setPage(window.scrollY)
+    });
   }, []);
 
   const handleChangePage = (num) => {
