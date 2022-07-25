@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Card } from "./Card";
+import { ContactForm } from "./ContactForm";
 import { ProgressBars } from "./ProgressBars";
 
 export function Content() {
@@ -90,13 +91,13 @@ export function Content() {
                     class="w-fit mt-20 relative border py-[1.4rem] px-[4.2rem] text-3xl text-lightRed tt cursor-pointer before:content-[''] before:absolute before:-z-10 before:top-0 before:left-1/2 before:h-full before:w-0 before:border before:border-x-0 after:content-[''] after:absolute after:-z-10 after:bottom-0 after:left-0 after:h-0 after:w-full after:bg-lightRed hover:text-lightGray hover:delay-500 hover:before:delay-[0s] hover:before:left-0 hover:before:w-full hover:after:bg-lightRed hover:after:delay-[.35s] hover:after:top-0 hover:after:h-full"
                     download
                   >
-                    Currículo
+                    Resume
                   </a>
                 </div>
               ) : null}
               {page === 1 ? (
                 <div className="flex justify-evenly items-center flex-wrap gap-x-36 gap-y-9 w-[70%]">
-                  <h1 className="w-full text-6xl text-lightRed font-bold my-5 ml-10">Some of my main skills:</h1>
+                  <h1 className="w-full text-5xl text-lightRed font-bold my-5 ml-10">Some of my main skills:</h1>
                   <ProgressBars text="JavaScript" percent="88" />
                   <ProgressBars text="HTML/CSS" percent="92" />
                   <ProgressBars text="ReactJs" percent="60" />
@@ -107,7 +108,7 @@ export function Content() {
               ) : null}
               {page === 2 ? (
                   <>
-                  <h1 className="no w-full text-6xl text-lightRed font-bold my-5 ml-10">My works...</h1>
+                  <h1 className="w-full text-5xl text-lightRed font-bold my-5 ml-10">My works...</h1>
                     <div id="cards" className="no flex justify-evenly items-center flex-wrap h-[85%] w-[70%] overflow-scroll overflow-x-hidden">
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/setvet.PNG" title="Setvet" link="https://setvet-96c51.web.app/" />
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/sudoku.PNG" title="Sudoku" link="https://caiofaraleski.github.io/Sudoku/" />
@@ -119,9 +120,7 @@ export function Content() {
                   </>
               ) : null}
               {page === 3 ? (
-                <div>
-                  ijaojhusihuas
-                </div>
+                <ContactForm />
               ) : null}
             </motion.div>
       </AnimatePresence>
