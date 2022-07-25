@@ -3,9 +3,9 @@ import { Content } from "../components/Content";
 export function Home() {
 
   return (
-    <div className="home h-screen w-screen bg-black flex justify-between items-center relative">
+    <div className="home h-screen w-screen bg-black flex flex-col lg:flex-row justify-between items-center relative">
       <Content />
-      <div className="h-60 max-w-[4%] flex flex-col justify-evenly items-center text-lightGray mr-4">
+      <div className="lg:h-60 lg:max-h-60 lg:max-w-[4%] w-60 max-h-[4%] flex lg:flex-col flex-row justify-evenly items-center text-lightGray mb-4 lg:mr-4 lg:mb-0">
         <a
           className="h-10 w-10 mx-3 bg-lightGray rounded-full flex justify-center items-center group transition-transform hover:scale-150 hover:m-0"
           href="https://github.com/CaioFaraleski"

@@ -48,7 +48,7 @@ export function Content() {
   }
 
   return (
-    <div className="h-full w-[94%] text-white flex flex-col flex-wrap items-center ml-[4%]">
+    <div className="h-full lg:w-[94%] w-full text-white flex flex-col flex-wrap items-center justify-center lg:ml-[4%]">
       <div className="flex justify-center items-center h-[10%]">
         <div className="flex justify-center items-center">
           <span onClick={() => handleChangePage(0)} className={`rounded-full cursor-pointer ${page === 0 ? "bg-lightGray p-2 mx-2" : "bg-zinc-800 p-1 mx-3"}`}></span>
@@ -60,7 +60,7 @@ export function Content() {
       <section className="h-[90%] w-full flex justify-start items-center">
       <AnimatePresence>
             <motion.div
-              className="absolute h-3/4 w-3/4"
+              className="absolute lg:h-3/4 h-2/4 lg:w-3/4 w-full lg:text-start text-center"
               key={page}
               initial="enter"
               animate="in"
@@ -75,7 +75,7 @@ export function Content() {
               }}
               variants={{
                 enter: {x: toLeft ? 150 : -150, opacity: 0},
-                in: {x: 50, opacity: 1},
+                in: {x: 0, opacity: 1},
                 exit: {opacity: 0},
               }}
               >
@@ -88,7 +88,7 @@ export function Content() {
                   <h2 className="text-6xl mt-10 pl-1">Front-end Developer</h2>
                   <a
                     href="https://caiofaraleski.github.io/portfolio/src/assets/Caio_Faraleski.pdf"
-                    class="w-fit flex items-center mt-20 relative border py-[1.4rem] px-[4.2rem] text-3xl text-lightRed tt cursor-pointer before:content-[''] before:absolute before:-z-10 before:top-0 before:left-1/2 before:h-full before:w-0 before:border before:border-x-0 after:content-[''] after:absolute after:-z-10 after:bottom-0 after:left-0 after:h-0 after:w-full after:bg-lightRed hover:text-lightGray hover:delay-500 hover:before:delay-[0s] hover:before:left-0 hover:before:w-full hover:after:bg-lightRed hover:after:delay-[.35s] hover:after:top-0 hover:after:h-full group"
+                    class="w-fit flex items-center self-center mt-20 relative border py-[1.4rem] px-[4.2rem] text-3xl text-lightRed tt cursor-pointer before:content-[''] before:absolute before:-z-10 before:top-0 before:left-1/2 before:h-full before:w-0 before:border before:border-x-0 after:content-[''] after:absolute after:-z-10 after:bottom-0 after:left-0 after:h-0 after:w-full after:bg-lightRed hover:text-lightGray hover:delay-500 hover:before:delay-[0s] hover:before:left-0 hover:before:w-full hover:after:bg-lightRed hover:after:delay-[.35s] hover:after:top-0 hover:after:h-full group"
                     download
                   >
                     Resume
@@ -97,7 +97,7 @@ export function Content() {
                 </div>
               ) : null}
               {page === 1 ? (
-                <div className="flex justify-evenly items-center flex-wrap gap-x-36 gap-y-9 w-[70%]">
+                <div className="flex justify-evenly items-center flex-wrap gap-x-36 gap-y-9 lg:w-[70%] w-full">
                   <h1 className="w-full text-5xl text-lightRed font-bold my-5 ml-10">Some of my main skills:</h1>
                   <ProgressBars text="JavaScript" percent="88" />
                   <ProgressBars text="HTML/CSS" percent="92" />
@@ -108,9 +108,9 @@ export function Content() {
                 </div>
               ) : null}
               {page === 2 ? (
-                  <>
+                  <div className="w-full h-full px-20">
                   <h1 className="w-full text-5xl text-lightRed font-bold my-5 ml-10">My works...</h1>
-                    <div id="cards" className="no flex justify-evenly items-center flex-wrap h-[85%] w-[70%] overflow-scroll overflow-x-hidden">
+                    <div id="cards" className="no flex justify-evenly items-center flex-wrap h-[85%] w-full lg:w-[70%] overflow-scroll overflow-x-hidden">
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/setvet.PNG" title="Setvet" link="https://setvet-96c51.web.app/" />
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/sudoku.PNG" title="Sudoku" link="https://caiofaraleski.github.io/Sudoku/" />
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/bombinhas.PNG" title="Hotel Bombinhas" link="https://caiofaraleski.github.io/Hotel-Bombinhas/" />
@@ -118,7 +118,7 @@ export function Content() {
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/ignitelab.PNG" title="Classes Platform" link="https://caiofaraleski.github.io/Classes-Platform/" />
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/snakegame.PNG" title="Snake Game" link="https://caiofaraleski.github.io/SnakeGame/" />
                     </div>
-                  </>
+                  </div>
               ) : null}
               {page === 3 ? (
                 <ContactForm />
