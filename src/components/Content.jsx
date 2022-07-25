@@ -88,7 +88,7 @@ export function Content() {
                   <h2 className="text-6xl mt-10 pl-1">Front-end Developer</h2>
                   <a
                     href="https://caiofaraleski.github.io/portfolio/src/assets/Caio_Faraleski.pdf"
-                    class="w-fit flex items-center self-center mt-20 relative border py-[1.4rem] px-[4.2rem] text-3xl text-lightRed tt cursor-pointer before:content-[''] before:absolute before:-z-10 before:top-0 before:left-1/2 before:h-full before:w-0 before:border before:border-x-0 after:content-[''] after:absolute after:-z-10 after:bottom-0 after:left-0 after:h-0 after:w-full after:bg-lightRed hover:text-lightGray hover:delay-500 hover:before:delay-[0s] hover:before:left-0 hover:before:w-full hover:after:bg-lightRed hover:after:delay-[.35s] hover:after:top-0 hover:after:h-full group"
+                    class="w-fit flex items-center self-center lg:self-start mt-20 relative border py-[1.4rem] px-[4.2rem] text-3xl text-lightRed tt cursor-pointer before:content-[''] before:absolute before:-z-10 before:top-0 before:left-1/2 before:h-full before:w-0 before:border before:border-x-0 after:content-[''] after:absolute after:-z-10 after:bottom-0 after:left-0 after:h-0 after:w-full after:bg-lightRed hover:text-lightGray hover:delay-500 hover:before:delay-[0s] hover:before:left-0 hover:before:w-full hover:after:bg-lightRed hover:after:delay-[.35s] hover:after:top-0 hover:after:h-full group"
                     download
                   >
                     Resume
@@ -108,7 +108,7 @@ export function Content() {
                 </div>
               ) : null}
               {page === 2 ? (
-                  <div className="w-full h-full px-20">
+                  <div className="w-full h-full lg:px-0 px-20">
                   <h1 className="w-full text-5xl text-lightRed font-bold my-5 ml-10">My works...</h1>
                     <div id="cards" className="no flex justify-evenly items-center flex-wrap h-[85%] w-full lg:w-[70%] overflow-scroll overflow-x-hidden">
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/setvet.PNG" title="Setvet" link="https://setvet-96c51.web.app/" />
