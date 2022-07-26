@@ -95,7 +95,7 @@ export function Content() {
               }}
               variants={{
                 enter: {x: toLeft ? 150 : -150, opacity: 0},
-                in: {x: 0, opacity: 1},
+                in: {x: window.screen.width >= 1024 ? 50 : 0, opacity: 1},
                 exit: {opacity: 0},
               }}
               >
