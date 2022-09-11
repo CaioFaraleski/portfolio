@@ -44,7 +44,19 @@ body {
 
 ::-webkit-scrollbar {
   width: 1px;
-  background: black;
+  background: transparent;
+}
+
+@media (max-width: 3840px) {
+    html {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 2560px) {
+    html {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1536px) {

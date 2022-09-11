@@ -82,7 +82,7 @@ export function Content() {
       <section className="h-[90%] w-full flex justify-start items-center">
       <AnimatePresence>
             <motion.div
-              className="absolute lg:h-3/4 h-2/4 lg:w-3/4 w-full lg:text-start text-center"
+              className="absolute lg:h-3/4 h-[65%] lg:w-3/4 w-full lg:text-start text-center"
               key={page}
               initial="enter"
               animate="in"
@@ -131,8 +131,7 @@ export function Content() {
               ) : null}
               {page === 2 ? (
                   <div className="w-full h-full lg:px-0 px-20">
-                  <h1 className="w-full text-5xl text-lightRed font-bold my-5 ml-10">My works...</h1>
-                    <div id="cards" className="no flex justify-evenly items-center flex-wrap h-[85%] w-full lg:w-[70%] overflow-scroll overflow-x-hidden">
+                    <div id="cards" className="no flex justify-center lg:justify-between items-center flex-wrap h-[85%] w-full lg:w-[70%] overflow-scroll overflow-x-hidden">
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/ongjp.png" title="ONG JP" link="https://ong-jp.vercel.app/" />
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/setvet.PNG" title="Setvet" link="https://setvet-96c51.web.app/" />
                       <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/sudoku.PNG" title="Sudoku" link="https://caiofaraleski.github.io/Sudoku/" />
