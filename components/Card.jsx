@@ -10,7 +10,7 @@ return (
         {title}
       </div>
       <div className="no w-[95%] flex justify-start items-center text-lightRed text-md">
-        See work <img src={linkImage} className="no h-3 mx-2" alt="link" />
+        See work <img src={linkImage.src} className="no h-3 mx-2" alt="link" />
       </div>
   </a>
 )
