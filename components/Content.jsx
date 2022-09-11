@@ -100,11 +100,11 @@ export function Content() {
               }}
               >
               {page === 0 ? (
-                <div className="h-full flex flex-col ml-10 mt-10">
+                <div className="h-full flex flex-col lg:ml-10 lg:mt-10">
                   <h2 className="text-5xl font-extralight pl-1">
                     Hi, i'm
                   </h2>
-                  <h1 className="text-lightRed text-9xl font-semibold mt-4">Caio Faraleski</h1>
+                  <h1 className="text-lightRed text-[7.5rem] font-semibold mt-4">Caio Faraleski</h1>
                   <h2 className="text-6xl mt-10 pl-1">Front-end Developer</h2>
                   <a
                     href="/Caio_Faraleski.pdf"
@@ -118,7 +118,7 @@ export function Content() {
               ) : null}
               {page === 1 ? (
                 <div className="flex justify-evenly items-center flex-wrap gap-x-36 gap-y-9 lg:w-[70%] w-full">
-                  <h1 className="w-full text-5xl text-lightRed font-bold my-5 ml-10">Some of my main skills:</h1>
+                  <h1 className="w-full text-5xl text-lightRed font-bold my-5 lg:ml-10">Some of my main skills:</h1>
                   <ProgressBars text="JavaScript" percent="88" />
                   <ProgressBars text="HTML/CSS" percent="92" />
                   <ProgressBars text="ReactJs" percent="60" />
