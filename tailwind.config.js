@@ -23,6 +23,8 @@ module.exports = {
         'pokedex': "url('./src/assets/images/pokedex.PNG')",
         'ignitelab': "url('./src/assets/images/ignitelab.PNG')",
         'snakegame': "url('./src/assets/images/snakegame.PNG')",
+        'home-desktop': "url('./src/assets/images/test5.png')",
+        'home-mobile': "url('./src/assets/images/bg-mobile.PNG')",
       }),
     },
   },

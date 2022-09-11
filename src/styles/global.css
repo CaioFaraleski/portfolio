@@ -9,7 +9,6 @@ body {
 }
 
 .home {
-  background-image: url('https://caiofaraleski.github.io/portfolio/src/assets/images/test5.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -62,7 +61,6 @@ body {
 
 @media (max-width: 1000px) {
     .home {
-      background-image: url('https://caiofaraleski.github.io/portfolio/src/assets/images/bg-mobile.png');
       background-size: cover;
 
     }
