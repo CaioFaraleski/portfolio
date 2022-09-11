@@ -132,13 +132,13 @@ export function Content() {
               {page === 2 ? (
                   <div className="w-full h-full lg:px-0 px-20">
                     <div id="cards" className="no flex justify-center lg:justify-between items-center flex-wrap h-[85%] w-full lg:w-[70%] overflow-scroll overflow-x-hidden">
-                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/ongjp.png" title="ONG JP" link="https://ong-jp.vercel.app/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/setvet.PNG" title="Setvet" link="https://setvet-96c51.web.app/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/sudoku.PNG" title="Sudoku" link="https://caiofaraleski.github.io/Sudoku/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/bombinhas.PNG" title="Hotel Bombinhas" link="https://caiofaraleski.github.io/Hotel-Bombinhas/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/pokedex.PNG" title="Pokedex" link="https://pokedex-caio.herokuapp.com/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/ignitelab.PNG" title="Classes Platform" link="https://caiofaraleski.github.io/Classes-Platform/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/src/assets/images/snakegame.PNG" title="Snake Game" link="https://caiofaraleski.github.io/SnakeGame/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/ongjp.png" title="ONG JP" link="https://ong-jp.vercel.app/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/setvet.png" title="Setvet" link="https://setvet-96c51.web.app/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/sudoku.png" title="Sudoku" link="https://caiofaraleski.github.io/Sudoku/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/bombinhas.png" title="Hotel Bombinhas" link="https://caiofaraleski.github.io/Hotel-Bombinhas/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/pokedex.png" title="Pokedex" link="https://pokedex-caio.herokuapp.com/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/ignitelab.png" title="Classes Platform" link="https://caiofaraleski.github.io/Classes-Platform/" />
+                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/snakegame.png" title="Snake Game" link="https://caiofaraleski.github.io/SnakeGame/" />
                     </div>
                   </div>
               ) : null}
