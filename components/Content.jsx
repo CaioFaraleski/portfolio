@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import { Card } from "./Card";
 import { ContactForm } from "./ContactForm";
 import { ProgressBars } from "./ProgressBars";
-// import resume from "../assets/Caio_Faraleski.pdf";
-import download from "../assets/images/download.png";
 
 export function Content() {
   const [page, setPage] = useState(0);
@@ -109,12 +107,12 @@ export function Content() {
                   <h1 className="text-lightRed text-9xl font-semibold mt-4">Caio Faraleski</h1>
                   <h2 className="text-6xl mt-10 pl-1">Front-end Developer</h2>
                   <a
-                    href="https://caiofaraleski.github.io/portfolio/src/assets/Caio_Faraleski.pdf"
+                    href="/Caio_Faraleski.pdf"
                     className="w-fit flex items-center self-center lg:self-start mt-20 relative border py-[1.4rem] px-[4.2rem] text-3xl text-lightRed tt cursor-pointer before:content-[''] before:absolute before:-z-10 before:top-0 before:left-1/2 before:h-full before:w-0 before:border before:border-x-0 after:content-[''] after:absolute after:-z-10 after:bottom-0 after:left-0 after:h-0 after:w-full after:bg-lightRed hover:text-lightGray hover:delay-500 hover:before:delay-[0s] hover:before:left-0 hover:before:w-full hover:after:bg-lightRed hover:after:delay-[.35s] hover:after:top-0 hover:after:h-full group"
                     download
                   >
                     Resume
-                    <img src={download.src} className="downimg filter group-hover:brightness-0 group-hover:invert h-7 ml-5 group-hover:delay-500" />
+                    <img src={"/download.png"} className="downimg filter group-hover:brightness-0 group-hover:invert h-7 ml-5 group-hover:delay-500" />
                   </a>
                 </div>
               ) : null}
@@ -132,13 +130,13 @@ export function Content() {
               {page === 2 ? (
                   <div className="w-full h-full lg:px-0 px-20">
                     <div id="cards" className="no flex justify-center lg:justify-between items-center flex-wrap h-[85%] w-full lg:w-[70%] overflow-scroll overflow-x-hidden">
-                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/ongjp.png" title="ONG JP" link="https://ong-jp.vercel.app/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/setvet.png" title="Setvet" link="https://setvet-96c51.web.app/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/sudoku.png" title="Sudoku" link="https://caiofaraleski.github.io/Sudoku/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/bombinhas.png" title="Hotel Bombinhas" link="https://caiofaraleski.github.io/Hotel-Bombinhas/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/pokedex.png" title="Pokedex" link="https://pokedex-caio.herokuapp.com/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/ignitelab.png" title="Classes Platform" link="https://caiofaraleski.github.io/Classes-Platform/" />
-                      <Card img="https://caiofaraleski.github.io/portfolio/assets/images/snakegame.png" title="Snake Game" link="https://caiofaraleski.github.io/SnakeGame/" />
+                      <Card img="/ongjp.png" title="ONG JP" link="https://ong-jp.vercel.app/" />
+                      <Card img="/setvet.png" title="Setvet" link="https://setvet-96c51.web.app/" />
+                      <Card img="/sudoku.png" title="Sudoku" link="https://caiofaraleski.github.io/Sudoku/" />
+                      <Card img="/bombinhas.png" title="Hotel Bombinhas" link="https://caiofaraleski.github.io/Hotel-Bombinhas/" />
+                      <Card img="/pokedex.png" title="Pokedex" link="https://pokedex-caio.herokuapp.com/" />
+                      <Card img="/ignitelab.png" title="Classes Platform" link="https://caiofaraleski.github.io/Classes-Platform/" />
+                      <Card img="/snakegame.png" title="Snake Game" link="https://caiofaraleski.github.io/SnakeGame/" />
                     </div>
                   </div>
               ) : null}
