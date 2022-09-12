@@ -3,12 +3,12 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export function ProgressBars({ text, percent }) {
   return (
-    <div className="w-[13rem]">
-      <h1 className="text-lightGray text-2xl font-bold mb-3">{text}</h1>
-      <div className="w-full bg-gray-200 rounded-full border border-lightGray">
+    <div className="w-[55%] lg:w-[45%]">
+      <h1 className="text-lightGray text-lg font-bold mb-1">{text}</h1>
+      <div className="w-full bg-gray-200 rounded-full bg-[#323232]">
         <AnimatePresence>
           <motion.div
-            className="transition bg-lightRed py-4 rounded-full"
+            className="transition bg-lightRed py-1 rounded-full"
             style={{width: `${percent}%`}}
             initial="enter"
             animate="in"

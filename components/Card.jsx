@@ -2,7 +2,7 @@ export function Card({ img, title, link }) {
   const t = img.src
 
   return (
-    <a href={link} className={`no w-[34rem] lg:w-[28rem] flex flex-col items-center my-7 mx-5 rounded-md cursor-pointer transition hover:scale-110`}>
+    <a href={link} className={`no w-[36rem] lg:w-[28rem] flex flex-col items-center my-7 mx-5 rounded-md cursor-pointer transition hover:scale-110`}>
         <figure className="no w-[95%] flex justify-center mt-3 bg-[#161616]">
           <img src={img} alt={title} className="no w-[90%] py-[2rem]" />
         </figure>

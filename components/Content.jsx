@@ -117,11 +117,25 @@ export function Content() {
                 </div>
               ) : null}
               {page === 1 ? (
-                <div className="flex justify-evenly items-center flex-wrap gap-x-36 gap-y-9 lg:w-[70%] w-full">
-                  <h1 className="w-full text-5xl text-lightRed font-bold my-5 lg:ml-10">Some of my main skills:</h1>
+                <div className="flex justify-center lg:justify-between items-center flex-wrap gap-y-4 lg:w-[70%] w-full">
+                  <div className="w-[60%] lg:w-full mb-10 flex flex-wrap justify-center gap-x-[10%] lg:gap-x-0 lg:justify-around">
+                    <div className="w-[70%] h-[13rem] lg:w-[24rem] lg:h-[16rem] flex flex-col justify-evenly items-center lg:items-start mb-8 lg:m-0 px-3 lg:pl-6 rounded-lg bg-[#161616] bg-white-line bg-top bg-2/100 bg-no-repeat">
+                      <img src="/frontend.png" className="w-1/5 m-3" alt="" />
+                      <h1 className="text-lg lg:text-xl">Front End Development</h1>
+                      <p className="text-xs lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam provident fugit enim eligendi tempore</p>
+                    </div>
+                    <div className="w-[70%] h-[13rem] lg:w-[24rem] lg:h-[16rem] flex flex-col justify-evenly items-center lg:items-start mt-8 lg:m-0 px-3 lg:pl-6 rounded-lg bg-[#161616] bg-white-line bg-top bg-2/100 bg-no-repeat">
+                      <img src="/backend.png" className="w-1/5 m-3" alt="" />
+                      <h1 className="text-lg lg:text-xl">Back End Development</h1>
+                      <p className="text-xs lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veniam provident fugit enim eligendi tempore</p>
+                    </div>
+                  </div>
                   <ProgressBars text="JavaScript" percent="88" />
                   <ProgressBars text="HTML/CSS" percent="92" />
-                  <ProgressBars text="ReactJs" percent="60" />
+                  <ProgressBars text="ReactJs" percent="72" />
+                  <ProgressBars text="NextJs" percent="60" />
+                  <ProgressBars text="NodeJs" percent="44" />
+                  <ProgressBars text="Express" percent="37" />
                   <ProgressBars text="TypeScript" percent="30" />
                   <ProgressBars text="Sass" percent="85" />
                   <ProgressBars text="Bootstrap || Tailwind" percent="78" />

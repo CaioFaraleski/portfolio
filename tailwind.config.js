@@ -19,7 +19,11 @@ module.exports = {
       backgroundImage: theme => ({
         'home-desktop': "url('/bg.png')",
         'home-mobile': "url('/bg-mobile.png')",
+        'white-line': "url('/white-line.png')",
       }),
+      backgroundSize: {
+        '2/100' : '100% 2%',
+      }
     },
   },
   plugins: [],
