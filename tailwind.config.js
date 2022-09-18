@@ -2,7 +2,7 @@
 module.exports = {
   mode: 'jit',
   content: [
-    './src/**/*.jsx'
+    './**/*.jsx'
   ],
   theme: {
     extend: {
@@ -17,13 +17,13 @@ module.exports = {
         red: "#A60311",
       },
       backgroundImage: theme => ({
-        'setvet': "url('./src/assets/images/setvet.PNG')",
-        'sudoku': "url('./src/assets/images/sudoku.PNG')",
-        'bombinhas': "url('./src/assets/images/bombinhas.PNG')",
-        'pokedex': "url('./src/assets/images/pokedex.PNG')",
-        'ignitelab': "url('./src/assets/images/ignitelab.PNG')",
-        'snakegame': "url('./src/assets/images/snakegame.PNG')",
+        'home-desktop': "url('/bg.png')",
+        'home-mobile': "url('/bg-mobile.png')",
+        'white-line': "url('/white-line.png')",
       }),
+      backgroundSize: {
+        '2/100' : '100% 2%',
+      }
     },
   },
   plugins: [],
